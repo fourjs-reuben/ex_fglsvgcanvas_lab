@@ -1,0 +1,36 @@
+LAYOUT (TEXT="fglsvgcanvas Lab", MINWIDTH=80, MINHEIGHT=25)
+HBOX 
+TABLE
+{
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+[f01      |f02       |f03        ]
+}
+END # TABLE
+GRID
+{
+[wc01                            ]
+}
+END #GRID
+END #HBOX
+END #LAYOUT
+
+ATTRIBUTES
+f01 = formonly.title, TITLE="Title";
+f02 = formonly.value, TITLE="Value";
+f03 = formonly.colour, TITLE="Colour";
+
+WEBCOMPONENT wc01 = formonly.chart, COMPONENTTYPE="fglsvgcanvas", SIZEPOLICY=FIXED, STRETCH=BOTH, SCROLLBARS=NONE,
+    PROPERTIES=(
+     selection = "select",
+     mouse_event_timeout = 600,
+     mouse_event_focus   = false
+   );
+   
+INSTRUCTIONS
+SCREEN RECORD scr(title, value, colour)
