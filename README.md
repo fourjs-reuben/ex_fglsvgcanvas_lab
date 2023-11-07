@@ -12,3 +12,5 @@ Example Lab Files for learning fglsvgcanvas
 * ex_fglsvgcanvas_lib_5 = Added ability to detect clicks on individual slices (will display selected bar to MESSAGE)
 
 * ex_fglsvgcanvas_lib_6 = Changed bar chart to pie chart
+
+(Change to update language)
